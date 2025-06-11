@@ -8,6 +8,10 @@ if(len(jugador1) < 1 or len(jugador2) < 1) : #validación de que los campos no e
     print("El nombre de los jugadores debe tener al menos un caracter");
     sys.exit()
     
+elif(len(jugador1) > 10 or len(jugador2) > 10) : #validación de que los nombres de los jugadores no excedan los 10 caracteres
+    print("El nombre de los jugadores no puede exceder los 10 caracteres");
+    sys.exit()
+
 elif(jugador1 == jugador2) : #validacion de que los nombres de los jugadores no sean iguales
     print("Los nombres de los jugadores no pueden ser iguales");
     sys.exit()
